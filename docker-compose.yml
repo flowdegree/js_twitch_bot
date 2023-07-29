@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  
+  twitch_bot:
+    build:
+      context: .
+    environment:
+      - FIREBASE_PROJECT_ID
+      - FIREBASE_PRIVATE_KEY
+      - FIREBASE_CLIENT_EMAIL
+      - TWITCH_TOKEN
+      - TWITCH_CLIENT_ID
+      - TZ 
