@@ -2,6 +2,7 @@ version: '3.4'
 services:
   
   bot:
+    container_name: js_twitch_bot
     build:
       context: .
     environment:
