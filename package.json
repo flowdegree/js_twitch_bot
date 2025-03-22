@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsup src/index.ts",
+    "simple-test": "tsx src/test/test.ts"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +18,12 @@
     "firebase-admin": "^11.8.0",
     "node-cron": "^3.0.2",
     "twitch-js": "^2.0.0-beta.45"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "@types/node-cron": "^3.0.11",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   }
 }
